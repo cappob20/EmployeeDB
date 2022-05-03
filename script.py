@@ -2,6 +2,7 @@
 import psycopg2
 import psycopg2.extras
 import sys
+import time
 from psycopg2.errors import InvalidDatetimeFormat
 
 # EDIT THIS BEFORE RUNNING
@@ -34,7 +35,7 @@ def getName():
             print("No employee found with that name.")
             name = input("Enter the name of Employee you want to update: ")
 
-# user can only type mm/dd/yyy for the date
+# user can only type mm/dd/yyyy for the date
 def inputDate(name):
     doh = input("Enter the Date of hire: ")
     while True:
@@ -87,7 +88,9 @@ def updateEmployee():
     if (prompt == "3"):
         inputDate(name)
 
-    print("Record Updated successfully!")
+    print("Record Updated successfully! \n")
+    # print("Returning to main menu... \n")
+    # promptUser()
 
 # remove an employee from the database
 def removeEmployee():
@@ -115,14 +118,14 @@ def addEmployee():
 
 # prompts user in command prompt to choose an option
 def promptUser():
-    prompt = input("Please select an option: \n 1. Add Employee \n 2. Remove Employee \n 3. Update Existing Employee \n 4. View All Employees \n 5. View One Employee \n")
+    prompt = input("Please select an option: \n 1. Add Employee \n 2. Remove Employee \n 3. Update Existing Employee \n 4. View All Employees \n 5. View One Employee \n 6. Exit \n\n")
     # add
     if (prompt == "1"):
         addEmployee()
     # remove
     if (prompt == "2"):
         removeEmployee()
-    #update
+    # update
     if (prompt == "3"):
         updateEmployee()
     # view all employee information
@@ -131,5 +134,16 @@ def promptUser():
     # view one employee information
     if (prompt == "5"):
         viewOne()
+    # exits program
+    if (prompt == "6"):
+        print("Now Exiting...")
+        exit()
+    time.sleep(2)
+    print("\nReturning to main menu... \n")
+    time.sleep(2)
+    promptUser()
+
+print("\nWelcome to the Employee Database!")
+time.sleep(1)
 promptUser()
 conn.close()
