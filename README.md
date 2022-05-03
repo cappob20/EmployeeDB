@@ -19,11 +19,11 @@ Install dependencies with `pip install`:
 Run `python script.py` from the root project directory to run the application.
 
 ## Usage
-**Add:** Add an employee to the database. Must include employee name, job type, and date of hire (in the form of mm/dd/yyy).\n
-**Remove:** Remove an employee from the database.\n
-**Update:** Update an existing employee from the database. Able to change employee name, job type, and date of hire (in the form of mm/dd/yyy).\n
-**View All:** Shows all of the current employees from the database.\n
-**View One:** Shows one of the current employees from the database that is specified.\n
+**Add:** Add an employee to the database. Must include employee name, job type, and date of hire (in the form of mm/dd/yyy).\
+**Remove:** Remove an employee from the database.\
+**Update:** Update an existing employee from the database. Able to change employee name, job type, and date of hire (in the form of mm/dd/yyy).\
+**View All:** Shows all of the current employees from the database.\
+**View One:** Shows one of the current employees from the database that is specified.\
 
 
 <sup>by Brianna Cappo</sup>
