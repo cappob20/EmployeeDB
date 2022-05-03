@@ -8,7 +8,7 @@ Install dependencies with `pip install`:
 * `psycopg2`
 
 ## Before Running
-####Update `conn` to connect to your database
+### Update `conn` to connect to your database
 `dbname=` Your database name\
 `user=` Your username\
 `host=` Your hostname (or localhost)\
