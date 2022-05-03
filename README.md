@@ -9,11 +9,11 @@ Install dependencies with `pip install`:
 
 ## Before Running
 ####Update `conn` to connect to your database
-`dbname=` Your database name
-`user=` Your username
-`host=` Your hostname (or localhost)
-`port=` Your port number
-`password=` Your password
+`dbname=` Your database name\
+`user=` Your username\
+`host=` Your hostname (or localhost)\
+`port=` Your port number\
+`password=` Your password\
 
 ## Running
 Run `python script.py` from the root project directory to run the application.
